@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>order.repair — Premium Domain For Sale</title>
+  <meta name="description" content="order.repair — premium domain suited for work-order systems, service dispatch, parts ordering, on-demand repair marketplaces and home-maintenance platforms. Submit an offer to purchase." />
+  <meta property="og:title" content="order.repair — Premium Domain For Sale" />
+  <meta property="og:description" content="order.repair — premium domain for work-order management, service dispatch, parts ordering, and home-repair marketplaces. Contact domain@order.repair" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#f6f8fa" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <style>
+    :root{
+      --max-width:980px;
+      --content-width:760px;
+      --panel: rgba(255,255,255,0.98);
+      --muted: #5b6568;
+      --accent: #ff6a00;   /* tool-orange */
+      --accent-2: #3b82c4; /* tool-blue */
+      --text: #092426;
+      --radius:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:28px;
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+
+      /* background evokes tools & household maintenance:
+         - soft workshop gradient
+         - large faint tool silhouettes for mood
+         - small repeating tool-icons pattern (wrench + screwdriver)
+      */
+      background:
+        radial-gradient(1200px 500px at 10% 10%, rgba(59,130,246,0.06), transparent 12%),
+        linear-gradient(180deg, #f7fbfc 0%, #eef6f9 50%, #e6f0f4 100%);
+      background-attachment: fixed;
+    }
+
+    /* large, low-opacity tool silhouettes */
+    .tools-silhouette {
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:0;
+      background-image:
+        url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'>\
+  <g fill='none' stroke='%23000000' stroke-opacity='0.06' stroke-width='2'>\
+    <path d='M120 320 L220 220 L280 280 L180 380 Z' />\
+    <path d='M420 70c30-10 60 8 60 38 0 20-16 45-28 57l-82 82-80-80 80-82c12-12 28-34 50-35z' />\
+    <path d='M650 310l70-70c6-6 6-16 0-22l-28-28c-6-6-16-6-22 0l-70 70 50 50z' />\
+  </g>\
+</svg>")
+        ;
+      background-repeat:no-repeat;
+      background-position: 5% 10%, 60% 20%, 85% 60%;
+      opacity:0.9;
+      mix-blend-mode: multiply;
+      transform: translateZ(0);
+    }
+
+    /* small repeating icons pattern (wrenches/screwdrivers) */
+    .tools-pattern {
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:0;
+      background-image:
+        url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'>\
+  <g fill='none' stroke='%23000000' stroke-opacity='0.06' stroke-width='2'>\
+    <path d='M6 42l12-12'/>\
+    <path d='M14 30c2-2 6-2 8 0 2 2 2 6 0 8l-3 3c-2 2-6 2-8 0-2-2-2-6 0-8l3-3z'/>\
+    <path d='M34 6l8 8'/>\
+    <path d='M36 6c4 4 4 10 0 14'/>\
+  </g>\
+</svg>");
+      background-repeat:repeat;
+      background-size: 48px 48px;
+      opacity:0.9;
+      mix-blend-mode: overlay;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      padding:36px;
+      border-radius:18px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.995), rgba(250,252,253,0.995));
+      box-shadow: 0 28px 60px rgba(6,18,24,0.08);
+      border: 1px solid rgba(6,18,24,0.04);
+      position:relative;
+      z-index:1;
+    }
+
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      justify-content:space-between;
+      margin-bottom:22px;
+    }
+
+    .brand{
+      display:flex;
+      gap:16px;
+      align-items:center;
+    }
+
+    .logo{
+      width:72px;
+      height:72px;
+      border-radius:12px;
+      background: linear-gradient(135deg,var(--accent-2),var(--accent));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      color:#fff;
+      font-size:20px;
+      letter-spacing:0.6px;
+      box-shadow: 0 10px 28px rgba(59,130,246,0.08);
+      flex-shrink:0;
+    }
+
+    h1{ margin:0; font-size:28px; color:var(--text); }
+    p.lead{ margin:6px 0 0; color:var(--muted); font-size:15px; }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:28px;
+      align-items:start;
+    }
+
+    .hero {
+      background: linear-gradient(90deg, rgba(59,130,246,0.05), rgba(255,106,0,0.02));
+      padding:14px 16px;
+      border-radius:12px;
+      color:var(--accent);
+      margin-bottom:16px;
+      border:1px solid rgba(59,130,246,0.06);
+    }
+    .hero p{ margin:0; font-size:14px; color:var(--accent); }
+
+    .panel {
+      background: var(--panel);
+      padding:22px;
+      border-radius:14px;
+      box-shadow: 0 8px 26px rgba(6,18,24,0.04);
+      border: 1px solid rgba(6,18,24,0.02);
+      max-width:var(--content-width);
+    }
+
+    h2{ margin-top:0; font-size:20px; color:var(--text); }
+    .features ul{ margin:0; padding-left:18px; color:var(--muted); }
+    .features li{ margin-bottom:10px; }
+
+    .cta-row{ display:flex; gap:12px; margin-top:18px; flex-wrap:wrap; align-items:center; }
+    .btn{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:10px 16px;
+      border-radius:999px;
+      font-weight:700;
+      cursor:pointer;
+      text-decoration:none;
+      border:0;
+    }
+    .btn-primary{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#071217;
+      box-shadow: 0 10px 30px rgba(255,106,0,0.12);
+    }
+    .btn-ghost{
+      background:transparent;
+      border:1px solid rgba(59,130,246,0.10);
+      color:var(--accent-2);
+    }
+
+    .price { margin-top:16px; font-weight:700; color:var(--text); font-size:18px; }
+    .muted-small { color:var(--muted); font-size:13px; margin-top:6px; }
+
+    .contact-card{
+      position:sticky;
+      top:32px;
+      align-self:start;
+      background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.94));
+      padding:18px;
+      border-radius:12px;
+      border:1px solid rgba(6,18,24,0.03);
+      box-shadow: 0 8px 26px rgba(6,18,24,0.035);
+      max-width:360px;
+    }
+
+    .contact-card h3{ margin:0 0 8px 0; font-size:16px; color:var(--text); }
+    .contact-email, .contact-email a{
+      white-space:nowrap;
+      display:inline-block;
+      font-weight:700;
+      color:var(--accent);
+      word-break: normal;
+      font-size:0.98rem;
+    }
+
+    form label{ display:block; font-size:13px; color:var(--muted); margin-bottom:6px; }
+    form input, form textarea {
+      width:100%;
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid rgba(6,18,24,0.06);
+      background:#fff;
+      color:var(--text);
+      font-size:14px;
+      margin-bottom:12px;
+    }
+    form textarea{ min-height:110px; resize:vertical; }
+
+    footer{ margin-top:18px; color:var(--muted); font-size:13px; text-align:center; }
+
+    @media (max-width:880px){
+      .grid{ grid-template-columns: 1fr; gap:18px; }
+      .contact-card{ position:relative; top:auto; width:100%; max-width:none; }
+      .container{ padding:20px; }
+      .logo{ width:64px; height:64px; border-radius:12px; }
+      h1{ font-size:22px; }
+    }
+
+    @media (max-width:520px){
+      .contact-email, .contact-email a{ font-size:0.88rem; }
+      header{ gap:12px; }
+    }
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "url": "https://order.repair",
+        "name": "order.repair",
+        "description": "order.repair — premium domain for work-order systems, service dispatch, parts ordering, on-demand repair marketplaces and maintenance tooling."
+      },
+      {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "domain@order.repair"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="tools-silhouette" aria-hidden="true"></div>
+  <div class="tools-pattern" aria-hidden="true"></div>
+
+  <main class="container" role="main" aria-labelledby="main-heading">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">OR</div>
+        <div>
+          <h1 id="main-heading">order.repair</h1>
+          <p class="lead">Premium domain for service orders, dispatch, parts fulfilment and home-maintenance platforms.</p>
+        </div>
+      </div>
+
+      <div style="text-align:right">
+        <div style="color:var(--muted);font-size:13px">For inquiries</div>
+        <div class="contact-email"><a href="mailto:domain@order.repair" style="color:inherit;text-decoration:none">domain@order.repair</a></div>
+      </div>
+    </header>
+
+    <div class="hero" role="note" aria-live="polite">
+      <p>
+        Order.repair blends order-management clarity with the repair category — a concise name for platforms that let customers request service, order parts, schedule technicians, or manage work orders.
+      </p>
+    </div>
+
+    <section class="grid" aria-label="Main content">
+      <div>
+        <article class="panel" aria-labelledby="why-title">
+          <h2 id="why-title">Why order.repair?</h2>
+          <p class="lead">A focused, two-word domain that signals transactional intent — excellent for B2B SaaS (work-order systems), consumer-facing on-demand repair marketplaces, parts distributors, and field-service platforms.</p>
+
+          <div class="features" style="margin-top:12px">
+            <ul>
+              <li>Short, action-oriented and category-specific — great for discoverability and conversions</li>
+              <li>Fits service dispatch, parts ordering, work-order software, and on-demand repair marketplaces</li>
+              <li>Clear brand voice for marketing, partner outreach, and local campaigns</li>
+            </ul>
+
+            <p style="margin-top:12px"><a href="https://corelli.com/domains.html" style="color:var(--accent)">How to Choose A Domain Name</a></p>
+          </div>
+
+          <div class="cta-row" role="group" aria-label="Actions">
+            <a class="btn btn-primary" href="#" id="inquireBtn">Make an Offer</a>
+            <a class="btn btn-ghost" href="mailto:domain@order.repair?subject=Domain%20Offer%20-%20order.repair">Email Now</a>
+          </div>
+
+          <div class="price">Domain: order.repair</div>
+          <div class="muted-small">Serious offers only. Transfer via escrow recommended for security and trust.</div>
+        </article>
+
+        <article class="panel" style="margin-top:20px" aria-labelledby="about-title">
+          <h3 id="about-title" style="margin-top:0">About this domain</h3>
+          <p class="lead">order.repair is ideal for businesses that streamline repair commerce — from booking and dispatch to parts procurement, invoicing and field-service management.</p>
+
+          <ul style="color:var(--muted);margin-top:12px">
+            <li>Great for SaaS work-order and dispatch platforms</li>
+            <li>Useful for parts suppliers, field-service providers and repair marketplaces</li>
+            <li>Transfer-ready — we recommend escrow to ensure a safe and secure transaction</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside class="contact-card" aria-label="Contact & offer">
+        <div>
+          <h3 style="margin-top:0">Contact & Offer</h3>
+          <p style="margin-top:6px;color:var(--muted)">Submit an offer — this form will open your email client with the details prefilled. Or email <a href="mailto:domain@order.repair" class="contact-email">domain@order.repair</a>.</p>
+
+          <form id="inquiryForm" onsubmit="handleSubmit(event)" aria-label="Domain offer form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="offer">Your offer (USD)</label>
+            <input id="offer" name="offer" type="text" placeholder="Enter your offer (USD)" required />
+
+            <label for="company">Company (optional)</label>
+            <input id="company" name="company" type="text" placeholder="Your company or organization" />
+
+            <label for="country">Country</label>
+            <input id="country" name="country" type="text" placeholder="Your country" required />
+
+            <label for="phone">Phone number (optional)</label>
+            <input id="phone" name="phone" type="tel" />
+
+            <label for="message">Message (questions, timeline, escrow preference)</label>
+            <textarea id="message" name="message" placeholder="Hi — I'm submitting an offer for order.repair. Please share transfer instructions and next steps."></textarea>
+
+            <button class="btn btn-primary" type="submit" style="width:100%; margin-top:6px">Send Offer</button>
+          </form>
+
+          <footer style="margin-top:10px; text-align:left; color:var(--muted); font-size:13px">
+            Prefer a direct email? <a href="mailto:domain@order.repair" style="color:var(--accent)" class="contact-email">domain@order.repair</a>
+          </footer>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      &copy; 2025 order.repair. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    // Compose a mailto: URL from form contents to open the user's email client.
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const offer = document.getElementById('offer').value.trim();
+      const company = document.getElementById('company').value.trim();
+      const country = document.getElementById('country').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Domain Offer - order.repair');
+      const bodyText =
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Company: ${company || '(not provided)'}\n` +
+        `Offer (USD): ${offer}\n` +
+        `Country: ${country}\n` +
+        `Phone: ${phone || '(not provided)'}\n\n` +
+        `Message:\n${message}\n\n---\nSent from order.repair offer form`;
+
+      const body = encodeURIComponent(bodyText);
+      const mailto = `mailto:domain@order.repair?subject=${subject}&body=${body}`;
+      window.location.href = mailto;
+    }
+
+    document.getElementById('inquireBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      const form = document.getElementById('inquiryForm');
+      if(window.innerWidth < 900){
+        form.scrollIntoView({behavior:'smooth', block:'center'});
+        form.querySelector('input').focus();
+      } else {
+        const subject = encodeURIComponent('Domain Offer - order.repair');
+        const body = encodeURIComponent('Hi — I would like to make an offer for order.repair. Please reply with transfer instructions and next steps.');
+        window.location.href = `mailto:domain@order.repair?subject=${subject}&body=${body}`;
+      }
+    });
+  </script>
+</body>
+</html>
